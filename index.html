@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <section class="search-card">
+            <div class="weather-icon">☁</div>
+
+            <h1>Weather Forecast</h1>
+
+            <p class="subtitle">
+                Enter a city name to check the weather
+            </p>
+
+            <form>
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search city"
+                >
+
+                <button type="submit" id="submit">
+                    Search
+                </button>
+            </form>
+        </section>
+
+
+        <section id="current-weather" class="weather-card">
+
+            <div class="weather-left">
+                <h2 id="locationn"></h2>
+
+                <h3 id="temperature"></h3>
+
+                <p id="generalweather"></p>
+            </div>
+
+            <div class="weather-right">
+                <p id="windspeed"></p>
+                <p id="humidity"></p>
+                <p id="rain"></p>
+            </div>
+
+        </section>
+
+
+        <section id="forecast-container">
+
+            <h2>24 Hour Forecast</h2>
+
+            <div id="hourly-forecast"></div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Weather data provided by Visual Crossing Weather.</p>
+        <p>&copy; 2026 Weather Shown Data App. All rights reserved.</p>
+    </footer>
+
+    <script src="scriptfull.js"></script>
+
+</body>
+</html>
